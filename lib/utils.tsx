@@ -9,5 +9,5 @@ export const isMatchGlobalSearch = (transaction: string, searchInputValue: strin
 };
 
 export const filterDriverName = (transaction: Array<DriverObject>, searchInputValue: string) =>
-    transaction.filter(tx => isMatchGlobalSearch(tx.name, searchInputValue)
+    transaction.filter(tx => isMatchGlobalSearch(tx?.name, searchInputValue)
     );

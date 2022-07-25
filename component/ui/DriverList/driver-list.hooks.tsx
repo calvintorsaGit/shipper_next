@@ -7,6 +7,7 @@ const useListHooks = () => {
     });
     let currentPage = 0;
     let dataList = [];
+    const isOnSearch = listDriverReducer.onSearch;
     if (listDriverReducer) {
         currentPage = listDriverReducer.currentPage;
         const isOnSearch = listDriverReducer.onSearch;
@@ -17,6 +18,7 @@ const useListHooks = () => {
 
     return {
         dataList,
+        isOnSearch,
         currentPage,
         dispatch
     };
