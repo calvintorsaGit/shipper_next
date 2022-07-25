@@ -6,7 +6,7 @@ export const Page = React.forwardRef<HTMLDivElement, PageProps>(
     ({className, style, children, ...rest}, ref) => {
         return (
             <main ref={ref} className={className}
-                  style={{backgroundColor: '#fafafa', ...style}} {...rest}>
+                  style={style} {...rest}>
                 {children}
             </main>
         );
